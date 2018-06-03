@@ -79,8 +79,8 @@ public class Cola {
 		} else {
 			raiz = raiz.siguiente;
 		}
-		System.out.println("Eliminado" + aux);
-		System.out.println("Eliminado" + aud);
+		System.out.println("Eliminado: " + aux);
+		System.out.println("Eliminado: " + aud);
 		return aux;
 	}
 

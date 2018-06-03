@@ -18,12 +18,12 @@ public class Principal2 {
 		do {
 			try {
 				cd.fichero = new RandomAccessFile(ruta, "rw");
-				System.out.println("Bienvenido al Programa");
-				System.out.println("Seleccione una opcion:");
-				System.out.println("1.Agregar Muestra");
-				System.out.println("2.Quitar Muestra");
+				System.out.println("Bienvenido al Programa de muestras de medicamentos");
+				System.out.println("Seleccione una opcion para Muestra:");
+				System.out.println("1.Agregar ");
+				System.out.println("2.Quitar ");
 				System.out.println("3.Listar Muestras");
-				System.out.println("4.Mostrar Datos");
+				System.out.println("4.Cargar Datos");
 				System.out.println("0.Salir");
 				opcion = sc.nextInt();
 				switch (opcion) {
@@ -43,7 +43,7 @@ public class Principal2 {
 					cd.listar();
 					break;
 				case 4:
-					System.out.println("Muestras Datos");
+					System.out.println("Datos Cargados");
 					cd.CargarDatos();
 					break;
 				}
