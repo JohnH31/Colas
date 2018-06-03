@@ -1,6 +1,7 @@
 package Pilass;
 
 public class Nodo {
+	
 	int codigo;
 	String nombre;
 	Nodo siguiente;
@@ -29,8 +30,7 @@ public class Nodo {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
-		bytesNombre = new byte[20]; // arreglo de bytes de longitud 50
-		// convertir caracter por caracter a byte y agregarlo al arreglo
+		bytesNombre = new byte[20]; 
 		for (int i = 0; i < nombre.length(); i++) {
 			bytesNombre[i] = (byte) nombre.charAt(i);
 		}
@@ -43,5 +43,6 @@ public class Nodo {
 	public void setSiguiente(Nodo siguiente) {
 		this.siguiente = null;
 	}
+
 
 }
